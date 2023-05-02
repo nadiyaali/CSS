@@ -1,0 +1,118 @@
+/* *{
+    background-color: #d5f2e3;
+} */
+
+
+button{
+    font-size:30px;
+    background-color: #73ba9b;
+}
+
+h1,h2{
+    color:#003e1f;
+}
+
+/* applying styling on one element through ID */
+#signup{
+    background-color:#168aad;
+}
+
+/* applying styling on multiple elements through CLASS  */
+.tag{
+    color: #d9ed92;
+    background-color: #ef233c;
+    font-size:18px
+}
+/* post is a class that we made */
+/* descendent  selector*/
+.post span{
+    color:#ef233c;
+}
+
+/* For nested elements(descendent selector), this one means for all anchortags inside a span tag */
+span a{
+    color:#9e2a2b;
+}
+footer a{
+    color:#d90429;
+}
+
+/* Selective styling */
+/* ID styling can be applied for only one element n ID use #  */
+/* CLASS styling can be applied to multiple elements class use .  */
+
+/* COMBINATORS */
+/* this works for any button that follows input element */
+input+button{
+    background-color:pink;
+}
+/* For direct child, use input>button */
+input+button{
+    background-color:hotpink;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* For elements of a specific type */
+a[href="http://www.example.org"]{
+    color:green;
+}
+
+input[type="password"]{
+    background-color:yellowgreen;
+}
+/* Both work the same, the second option is a but better */
+section[class="post"]{
+    background-color:lightsteelblue;
+}
+
+section.post{
+    background-color:lightblue;
+}
+
+/* --------------------------------------------------- */
+/* CSS Pseudo-Classes(actives), elements in a particular state */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
+button:hover{
+    background-color:#9e2a2b;
+    color:#73ba9b;
+}
+/* post is a class */
+.post button:hover{
+    background-color: #003e1f;
+    color:#73ba9b
+}
+
+a:hover{
+    text-decoration:line-through;
+}
+
+/* When clicking */
+.post button:active{
+    background-color: #d9ed92;
+    color:#9e2a2b;
+}
+/* nth child is also important */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child  */
+/* for class SQUARE  */
+.square:nth-child(even) {
+    background-color: black;
+}
+
+.square:nth-child(odd) {
+    background-color: red;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Psuedo Elements */
+h2::first-letter{
+    font-size:50px;
+}
+
+p::first-line{
+    color:orange;
+}
+
+p::selection{
+    background-color: aqua;
+}
+

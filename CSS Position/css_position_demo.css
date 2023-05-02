@@ -1,0 +1,51 @@
+div{
+    border: 1px solid black;
+    background-color:green;
+    height:100px;
+    width:100px;
+    margin:5px;
+    display:inline-block;
+}
+
+#middle_static{
+    background-color:grey;
+    position:static;
+    /* By default, position is static */
+}
+
+
+#middle_relative{
+    background-color:grey;
+    position:relative;
+    top:50px;
+    left:25px;
+    /* relative to its original static position */
+}
+
+#middle_absolute{
+    background-color:yellow;
+    position:absolute;
+    top:50px;
+    left:25px;
+    /* relative to its page position */
+}
+
+
+#middle_fixed{
+    background-color:pink;
+    position:fixed;
+    top:20px;
+    left:150px;
+    /* By default, position is static */
+}
+
+
+
+#middle_sticky{
+    background-color:lightblue;
+    position:sticky;
+    top:20px;
+    left:200px;
+    /* By default, position is static */
+}
+

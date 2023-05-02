@@ -1,0 +1,59 @@
+/* Transition Website: https://easings.net/ */
+
+/* CSS Fonts:https://www.cssfontstack.com/  */
+
+/* Trending colors : https://coolors.co/palettes/trending */
+
+
+/* Specificaty calculator : https://specificity.keegan.st/ */
+
+
+
+
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: magenta;
+    /* Both properties of bg color andradius transition, unless specifically specified */
+    transition: 3s;
+    /* 3s is time take for transition, 1s is delay */
+    transition: 3s 1s;
+    transition: all 2s;
+    transition: background-color 1s, border-radius:4s ease-in;
+}
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin:10px;
+    
+}
+
+section:hover div{
+    margin-left: 500px;
+    transition: 3s;
+}
+
+
+section div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+
+section div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+section div:nth-of-type(3){
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+section div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+

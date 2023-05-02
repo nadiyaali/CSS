@@ -1,0 +1,12 @@
+main{
+    width:60%;
+    margin:0 auto;
+}
+
+h1,h2{
+    font-family:'Chivo Mono', monospace; 
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
